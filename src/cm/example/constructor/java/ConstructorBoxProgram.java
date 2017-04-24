@@ -24,6 +24,9 @@ public class ConstructorBoxProgram {
 		  height = (h > 0)?h:1;
 		  depth = (d > 0)?d:1;
 	  }
+	  public double volume() {
+		return width * height * depth;
+	}
 	
 	public static void main(String[] args) {
 		System.out.println("I am in the main Method :  \n");
@@ -39,9 +42,9 @@ public class ConstructorBoxProgram {
 		System.out.println("depth : " + box1.depth);
 		System.out.println("I am again in the Userdefine1 Constructor !!! \n");
 		ConstructorBoxProgram box2 = new ConstructorBoxProgram(10,15, 20);
-		System.out.println("width : " + box2.width);
-		System.out.println("height : " + box2.height);
-		System.out.println("depth : " + box2.depth);
+		System.out.println("width : " + box2.volume());
+		System.out.println("height : " + box2.volume());
+		System.out.println("depth : " + box2.volume());
 		System.out.println("I am again in the Usaerdefine2 Constructor !!!");
 
 	}
